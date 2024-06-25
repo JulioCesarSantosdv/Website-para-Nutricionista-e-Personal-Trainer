@@ -25,4 +25,4 @@ O site tem como objetivo promover serviços de consultoria nutricional e treinam
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nutricionista-personal-trainer.git
+   git clone https://github.com/JulioCesarSantosdv/nutricionista-personal-trainer.git
