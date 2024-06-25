@@ -1,0 +1,9 @@
+/meu-site
+|-- /assets
+|   |-- /css
+|   |   |-- style.css
+|   |-- /js
+|       |-- script.js
+|-- index.html
+|-- ebooks.html
+|-- sobre.html

@@ -1,0 +1,275 @@
+/* Resetando o CSS básico para garantir consistência em todos os navegadores */
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #dccbb5;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+    display: flex; /* Layout em flexbox */
+    justify-content: center; /* Centraliza os itens */
+}
+
+/* Estilo dos itens da navegação */
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Estilo dos links da navegação */
+nav ul li a {
+    color: #000; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Efeito de hover nos links da navegação */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos gerais para os títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900; /* Negrito forte */
+    color: #000; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+/* Estilo do wrapper para centralizar o conteúdo */
+.wrapper {
+    width: 100%;
+    margin: 0 auto; /* Centraliza o wrapper */
+}
+
+/* Estilo do main */
+main {
+    display: block;
+}
+
+/* Estilo do container para centralizar e definir largura máxima */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Padding interno */
+}
+
+/* Estilo dos parágrafos nas seções */
+section.module p {
+    margin-bottom: 40px; /* Espaçamento inferior */
+}
+
+/* Remove margem inferior da última seção */
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo dos títulos das seções */
+section.module h2 {
+    margin-bottom: 40px; /* Espaçamento inferior */
+    font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilo das seções de conteúdo */
+section.module.content {
+    padding: 40px 0; /* Padding superior e inferior */
+    background: #ece7d5; /* Cor de fundo */
+}
+
+/* Estilo das seções com efeito parallax */
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Altura da viewport */
+    width: 100%;
+    position: relative; /* Posição relativa para o efeito parallax */
+    overflow: hidden; /* Esconde overflow */
+    background-position: 50% 50%; /* Posição do background */
+    background-repeat: no-repeat; /* Não repete o background */
+    background-attachment: fixed; /* Fixa o background */
+    background-size: cover; /* Cobre toda a área da seção */
+}
+
+/* Efeito de gradiente sobre as seções parallax */
+section.module.parallax::after {
+    content: ""; /* Conteúdo vazio */
+    height: 100%; /* Altura total */
+    width: 100%; /* Largura total */
+    position: absolute; /* Posição absoluta */
+    z-index: 8; /* Camada acima do background */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Imagens de background para cada seção parallax */
+section.module.parallax-1 {
+    background-image: url('/assets/image/parallax1.JPG');
+}
+
+section.module.parallax-2 {
+    background-image: url('/assets/image/parallax2.JPG');
+}
+
+section.module.parallax-3 {
+    background-image: url('/assets/image/parallax3.JPG');
+}
+
+/* Estilo dos títulos nas seções parallax */
+section.module.parallax h1 {
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+    font-size: 50px; /* Tamanho da fonte */
+    z-index: 50; /* Camada acima do gradiente */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #dccbb5;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0; /* Padding superior e inferior */
+}
+
+/* Estilo dos links sociais no rodapé */
+footer .social-links {
+    margin: 1rem 0;
+}
+
+/* Estilo dos links sociais */
+footer .social-links a {
+    margin: 0 0.5rem; /* Margem lateral */
+    display: inline-block;
+}
+
+/* Estilo das imagens dos links sociais */
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Estilos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Layout em coluna */
+        align-items: center; /* Alinha ao centro */
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0; /* Margem superior e inferior */
+    }
+
+    section.module.parallax h1 {
+        font-size: 30px; /* Tamanho da fonte */
+    }
+
+    section.module h2 {
+        font-size: 24px; /* Tamanho da fonte */
+    }
+
+    .container {
+        padding: 10px; /* Padding interno */
+    }
+}
+
+/* Estilos para telas com largura máxima de 480px */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0.2rem 0; /* Margem superior e inferior */
+    }
+
+    section.module.parallax h1 {
+        font-size: 24px; /* Tamanho da fonte */
+    }
+
+    section.module h2 {
+        font-size: 20px; /* Tamanho da fonte */
+    }
+
+    .container {
+        padding: 5px; /* Padding interno */
+    }
+}
+
+//* Estilo para o indicador de carregamento */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o indicador de carregamento */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a borda giratória */
+.loading::before {
+    content: '';
+    position: absolute;
+    width: 80px; /* Largura da borda giratória */
+    height: 80px; /* Altura da borda giratória */
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Cor e largura da borda */
+    border-top-color: #3498db; /* Cor da borda superior */
+    border-radius: 50%; /* Deixa a borda arredondada */
+    animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo para a imagem de carregamento */
+.loading img {
+    border-radius: 50%; /* Deixa a imagem arredondada */
+    width: 80px; /* Ajusta o tamanho da imagem */
+    height: 80px;
+    position: relative;
+    z-index: 1001; /* Garante que a imagem fique sobre a borda */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 480px) {
+    .loading::before {
+        width: 60px; /* Ajusta o tamanho da borda para telas menores */
+        height: 60px;
+    }
+
+    .loading img {
+        width: 60px; /* Ajusta o tamanho da imagem para telas menores */
+        height: 60px;
+    }
+}
