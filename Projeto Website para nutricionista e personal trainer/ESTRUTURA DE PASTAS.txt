@@ -2,6 +2,11 @@
 |-- /assets
 |   |-- /css
 |   |   |-- style.css
+|   |-- /image
+|   |   |-- loading.gif
+|   |   |-- parallax1.JPG
+|   |   |-- parallax2.JPG
+|   |   |-- parallax3.JPG
 |   |-- /js
 |       |-- script.js
 |-- index.html
