@@ -23,7 +23,7 @@ nav ul {
     justify-content: center; /* Centraliza os itens */
 }
 
-/* Estilo dos itens da navegação */
+/* Espaçamento entre os links da barra de navegação*/
 nav ul li {
     margin: 0 1rem;
 }
