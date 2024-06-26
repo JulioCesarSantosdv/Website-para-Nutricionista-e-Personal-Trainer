@@ -273,19 +273,7 @@ footer .social-links img {
         height: 60px;
     }
 }
-/*Internal CSS for product boxes*/
-      body {
-         background-color: #f4f0ea; /* Cor de fundo areia clara */
-         margin: 0;
-         font-family: Arial, sans-serif;
-         color: #333; /* Cor do texto principal */
-      }
-
-      .header {
-         background-color: #dccbb5;
-         color: #fff;
-         padding: 1rem 0;
-      }
+/*CSS  página Ebooks*/
 
       .flex {
          display: flex;
@@ -300,17 +288,6 @@ footer .social-links img {
          font-size: 1.5rem;
          text-decoration: none;
          color: #fff;
-      }
-
-      .navbar {
-         display: flex;
-         gap: 20px;
-      }
-
-      .navbar a {
-         color: #fff;
-         text-decoration: none;
-         font-size: 1rem;
       }
 
       .products {
@@ -399,19 +376,6 @@ footer .social-links img {
          font-size: 24px;
          color: #27ae60;
       }
-
-      .total-books {
-         position: absolute;
-         bottom: 0;
-         right: 0;
-         background-color: #27ae60;
-         color: #fff;
-         padding: 5px 10px;
-         border-radius: 5px 0 0 0;
-         font-size: 14px;
-         display: none;
-      }
-
       .credit {
          background-color: #dccbb5;
          color: #333;
