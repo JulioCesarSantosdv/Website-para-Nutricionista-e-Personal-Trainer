@@ -5,14 +5,14 @@ body {
     font-family: sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    background-color: #f4f4f4; /* Página ebooks.html */
+    background-color: #f4f4f4; /* Cor de fundo padrão */
 }
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #dccbb5;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #dccbb5; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 1rem 0; /* Espaçamento interno do cabeçalho */
 }
 
 /* Estilo da navegação */
@@ -23,7 +23,7 @@ nav ul {
     justify-content: center; /* Centraliza os itens */
 }
 
-/* Espaçamento entre os links da barra de navegação*/
+/* Espaçamento entre os links da barra de navegação */
 nav ul li {
     margin: 0 1rem;
 }
@@ -137,8 +137,8 @@ section.module.parallax h1 {
 
 /* Estilo do rodapé */
 footer {
-    background-color: #dccbb5;
-    color: #333;
+    background-color: #dccbb5; /* Cor de fundo do rodapé */
+    color: #333; /* Cor do texto do rodapé */
     text-align: center;
     padding: 1rem 0; /* Padding superior e inferior */
 }
@@ -203,13 +203,15 @@ footer .social-links img {
     .container {
         padding: 5px; /* Padding interno */
     }
+
+    /* Ajusta o tamanho da borda e imagem para telas menores */
     .loading::before {
-        width: 60px; /* Ajusta o tamanho da borda para telas menores */
+        width: 60px; 
         height: 60px;
     }
 
     .loading img {
-        width: 60px; /* Ajusta o tamanho da imagem para telas menores */
+        width: 60px;
         height: 60px;
     }
 }
@@ -221,7 +223,7 @@ footer .social-links img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -255,133 +257,150 @@ footer .social-links img {
     100% { transform: rotate(360deg); }
 }
 
-/*CSS  página Ebooks*/
+/* CSS página Ebooks */
 
-      .flex {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding: 0 20px;
-         max-width: 1200px;
-         margin: 0 auto;
-      }
+/* Flex container para layout responsivo */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-      .logo {
-         font-size: 1.5rem;
-         text-decoration: none;
-         color: #fff;
-      }
+/* Estilo do logotipo */
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
 
-      .products {
-         max-width: 1200px;
-         margin: 20px auto;
-         padding: 0 20px;
-      }
+/* Container dos produtos */
+.products {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
 
-      .title {
-         text-align: center;
-         margin-bottom: 20px;
-         font-size: 2rem;
-         color: #242424;
-      }
+/* Título da seção de produtos */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #242424;
+}
 
-      .box-container {
-         display: flex;
-         justify-content: space-around;
-         flex-wrap: wrap;
-         gap: 20px;
-         margin-top: 20px;
-      }
-      
-      .box {
-         width: 300px;
-         padding: 20px;
-         background-color: #ffffff;
-         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Aumentar a sombra para destacar */
-         text-align: center;
-         transition: transform 0.3s ease;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         border-radius: 8px; /* Borda arredondada para suavizar */
-         position: relative; /* Para posição absoluta do carrinho */
-      }
-      
-      .box:hover {
-         transform: translateY(-10px);
-      }
-      
-      .box img {
-         max-width: 100%;
-         height: auto;
-         margin-bottom: 10px;
-         border-radius: 8px; /* Borda arredondada para suavizar */
-         float: right; /* Imagem à direita */
-      }
-      
-      .box .cat {
-         font-size: 14px;
-         color: #888;
-         margin-bottom: 5px;
-      }
-      
-      .box .name {
-         font-size: 18px;
-         font-weight: bold;
-         margin-bottom: 10px;
-         color: #333;
-      }
-      
-      .box .price {
-         font-size: 24px;
-         color: #27ae60;
-         margin-top: auto;
-      }
+/* Estilo dos flexbox 3 colunas */
 
-      .box form {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         margin-top: 10px;
-      }
+.box-container { /* Layout flexível */
+    display: flex;
+    justify-content: space-around;/* Espaço igual ao redor dos itens */
+    flex-wrap: wrap; /* Quebra itens em novas linhas se necessário */
+    gap: 20px; /* Espaçamento de 20px entre itens */
+    margin-top: 20px; /* Margem superior de 20px */
+}
 
-      .box form .qty {
-         width: 40px;
-         text-align: center;
-         margin-left: 5px;
-      }
+/* Estilo das caixas de produto */
+.box {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px; /* Borda arredondada */
+    position: relative; /* Para posição absoluta do ícone do carrinho */
+}
 
-      .cart-icon {
-         position: absolute;
-         bottom: 10px;
-         right: 10px;
-         font-size: 24px;
-         color: #27ae60;
-      }
-      .credit {
-         background-color: #dccbb5;
-         color: #333;
-         text-align: center;
-         padding: 1rem 0;
-         margin-top: 20px;
-      }
-   
+/* Efeito de hover nas caixas de produto */
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo das imagens dos produtos */
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Borda arredondada */
+    float: right; /* Imagem à direita */
+}
+
+/* Categoria do produto */
+.box .cat {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Nome do produto */
+.box .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Preço do produto */
+.box .price {
+    font-size: 24px;
+    color: #27ae60;
+    margin-top: auto;
+}
+
+/* Formulário de quantidade */
+.box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Campo de quantidade */
+.box form .qty {
+    width: 40px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #27ae60;
+}
+
+/* Créditos */
+.credit {
+    background-color: #dccbb5;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
 /* Ícone flutuante */
-
-.icone-flutuante{
+.icone-flutuante {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 40px;  
+    width: 40px;
     height: 40px;
     z-index: 1000;
 }
 
+/* Estilo da imagem do ícone flutuante */
 .icone-flutuante img {
-    width: 100%;  /* A imagem ocupa toda a largura da .icone-flutuante */
-    height: 100%; /* A imagem ocupa toda a altura da .icone-flutuante */
-    border-radius: 50%; /* Para ícones arredondados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ícone arredondado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     background-color: #25d366; /* Cor de fundo similar ao WhatsApp */
-    padding: 10px; /* Adiciona espaço ao redor do ícone */
+    padding: 10px; /* Espaço ao redor do ícone */
 }
