@@ -206,7 +206,7 @@ footer .social-links img {
     }
 }
 
-//* Estilo para o indicador de carregamento */
+/* Estilo para o indicador de carregamento */
 .loading {
     position: fixed;
     top: 0;
