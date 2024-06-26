@@ -2,6 +2,12 @@
 |-- /assets
 |   |-- /css
 |   |   |-- style.css
+|   |-- /icons
+|   |   |-- facebook.png
+|   |   |-- fas fa-shopping-cart.PNG
+|   |   |-- icons8-whatsapp-100.svg
+|   |   |-- instagram.png
+|   |   |-- twitter.png
 |   |-- /image
 |   |   |-- loading.gif
 |   |   |-- parallax1.JPG

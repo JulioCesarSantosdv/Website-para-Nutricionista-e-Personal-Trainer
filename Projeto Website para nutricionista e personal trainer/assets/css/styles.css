@@ -366,3 +366,22 @@ footer .social-links img {
          margin-top: 20px;
       }
    
+/* Ícone flutuante */
+
+.icone-flutuante{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;  
+    height: 40px;
+    z-index: 1000;
+}
+
+.icone-flutuante img {
+    width: 100%;  /* A imagem ocupa toda a largura da .icone-flutuante */
+    height: 100%; /* A imagem ocupa toda a altura da .icone-flutuante */
+    border-radius: 50%; /* Para ícones arredondados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    background-color: #25d366; /* Cor de fundo similar ao WhatsApp */
+    padding: 10px; /* Adiciona espaço ao redor do ícone */
+}
