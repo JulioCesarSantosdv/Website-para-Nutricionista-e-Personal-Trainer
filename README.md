@@ -26,3 +26,18 @@ O site tem como objetivo promover serviços de consultoria nutricional e treinam
 
    ```bash
    git clone https://github.com/JulioCesarSantosdv/nutricionista-personal-trainer.git
+
+# Convenções de Branches
+
+## Branch de Desenvolvimento
+
+Para uma branch para o desenvolvimento contínuo que não seja a branch principal de produção (`main`),
+ uma convenção comum é:
+
+- Use `develop` para a branch de desenvolvimento contínuo.
+- Use `feature/nome-da-funcionalidade` para novas funcionalidades.
+- Use `bugfix/nome-do-bug` para correções de bugs.
+- Use `hotfix/nome-do-hotfix` para correções urgentes.
+
+
+
