@@ -16,7 +16,7 @@ header {
 }
 
 /* Estilo da navegação */
-nav ul {
+.navbar ul {
     list-style: none; /* Remove marcadores da lista */
     padding: 0; /* Remove padding */
     display: flex; /* Layout em flexbox */
@@ -24,20 +24,20 @@ nav ul {
 }
 
 /* Espaçamento entre os links da barra de navegação */
-nav ul li {
+.navbar ul li {
     margin: 0 1rem;
 }
 
 /* Estilo dos links da navegação */
-nav ul li a {
+.navbar ul li a {
     color: #000; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado */
     font-weight: bold; /* Texto em negrito */
 }
 
 /* Efeito de hover nos links da navegação */
-nav ul li a:hover {
-    text-decoration: underline;
+.navbar ul li a:hover {
+    color: goldenrod;
 }
 
 /* Estilos gerais para os títulos */
@@ -188,7 +188,7 @@ footer .social-links img {
 
 /* Estilos para telas com largura máxima de 480px */
 @media (max-width: 480px) {
-    nav ul li {
+    .navbar ul li {
         margin: 0.2rem 0; /* Margem superior e inferior */
     }
 

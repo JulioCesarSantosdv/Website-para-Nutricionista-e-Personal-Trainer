@@ -6,3 +6,4 @@ document.addEventListener("DOMContentLoaded", function() {
         loadingIndicator.style.display = 'none';
     }, 3000); // Adiciona um atraso de 3 segundos
 });
+
