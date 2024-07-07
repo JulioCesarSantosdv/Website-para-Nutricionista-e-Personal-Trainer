@@ -1,0 +1,20 @@
+/* CONTÉM MEDIA QUERIES PARA RESPONSIVIDADE*/
+
+
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,61 @@
+ /*CONTÉM ESTILOS PARA A ESTRUTURA DO LAYOUT, */
+ /* COMO CABEÇALHO,RODAPÉ E NAVEGAÇÃO.*/
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #dccbb5;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Estilo da navegação */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Espaçamento entre os links da barra de navegação */
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+/* Estilo dos links da navegação */
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito de hover nos links da navegação */
+.navbar ul li a:hover {
+    color: goldenrod;
+}
+
+/* Estilo do rodapé */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dccbb5;
+    color: #333;
+    text-align: center;
+    padding: -10rem -10px;
+    font-size: 0.875rem;
+}
+
+/* Estilo dos links sociais no rodapé */
+footer .social-links {
+    margin: 0.5rem 0;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}

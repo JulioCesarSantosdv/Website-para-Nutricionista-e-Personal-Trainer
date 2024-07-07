@@ -1,0 +1,109 @@
+/* CONTÉM ESTILOS PARA SEÇÕES ESPECÍFICAS, COMO AS SEÇÕES PARALLAX */
+
+
+
+/*Seção de boas-vindas com efeito parallax */
+/* Estilo do wrapper para centralizar o conteúdo */
+.wrapper {
+    width: 100%;
+    margin: 0 auto; /* Centraliza o wrapper */
+}
+
+/* Seção de serviços com conteúdo com efeito parallax */
+/* Estilo do container para centralizar e definir largura máxima */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Padding interno */
+}
+
+/* Estilo do main */
+main {
+    display: block;
+}
+
+.main-content {
+    display: flex; /* Usar layout flexível */
+    align-items: flex-start; /* Alinhar itens ao topo */
+}
+
+.main-content .text {
+    flex: 1; /* Ocupar o espaço restante */
+    padding-right: 20px; /* Espaço à direita */
+}
+
+.main-content img {
+    max-width: 800px; /* Largura máxima */
+    margin-left: 20px; /* Espaço à esquerda */
+}
+
+
+/* Estilo dos parágrafos nas seções */
+section.module p {
+    margin-bottom: 40px;
+}
+
+/* Remove margem inferior da última seção */
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo dos títulos das seções */
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+/* Estilo das seções de conteúdo */
+section.module.content {
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+
+/* Estilo das seções com efeito parallax */
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Altura da viewport */
+    width: 100%;
+    position: relative; /* Posição relativa para o efeito parallax */
+    overflow: hidden; /* Esconde overflow */
+    background-position: 50% 50%; /* Posição do background */
+    background-repeat: no-repeat; /* Não repete o background */
+    background-attachment: fixed; /* Fixa o background */
+    background-size: cover; /* Cobre toda a área da seção */
+}
+
+/* Efeito de gradiente sobre as seções parallax */
+section.module.parallax::after {
+    content: ""; /* Conteúdo vazio */
+    height: 100%; /* Altura total */
+    width: 100%; /* Largura total */
+    position: absolute; /* Posição absoluta */
+    z-index: 8; /* Camada acima do background */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+/* Imagens de background para cada seção parallax */
+section.module.parallax-1 {
+    background-image: url('../image/parallax1.JPG');
+}
+
+section.module.parallax-2 {
+    background-image: url('../image/parallax2.JPG');
+}
+
+section.module.parallax-3 {
+    background-image: url('../image/parallax3.JPG');
+}
+
+/* Estilo dos títulos nas seções parallax */
+section.module.parallax h1 {
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+    font-size: 50px; /* Tamanho da fonte */
+    z-index: 50; /* Camada acima do gradiente */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}

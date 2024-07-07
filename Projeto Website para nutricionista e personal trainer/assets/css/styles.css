@@ -56,18 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; /* Alinhamento centralizado */
 }
 
-
+/*Seção de boas-vindas com efeito parallax */
 /* Estilo do wrapper para centralizar o conteúdo */
 .wrapper {
     width: 100%;
     margin: 0 auto; /* Centraliza o wrapper */
 }
 
-/* Estilo do main */
-main {
-    display: block;
-}
-
+/* Seção de serviços com conteúdo com efeito parallax */
 /* Estilo do container para centralizar e definir largura máxima */
 .container {
     width: 100%;
@@ -75,6 +71,12 @@ main {
     margin: 0 auto; /* Centraliza o container */
     padding: 20px; /* Padding interno */
 }
+
+/* Estilo do main */
+main {
+    display: block;
+}
+
 
 .main-content {
     display: flex; /* Usar layout flexível */

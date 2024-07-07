@@ -1,0 +1,25 @@
+  /*CONTÉM ESTILOS GLOBAIS E RESETS*/
+
+/* Resetando o CSS básico para garantir consistência em todos os navegadores */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Estilos gerais para os títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+}
