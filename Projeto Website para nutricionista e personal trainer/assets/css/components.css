@@ -1,7 +1,6 @@
 /* CONTÉM ESTILOS PARA COMPONENTES ESPECÍFICOS */
 /* COMO CARDS DE PRODUTOS , ÍCONES E CARREGAMENTO DE PÁGINA */
 
-
 /* Estilo para o indicador de carregamento */
 .loading {
     position: fixed;
@@ -158,17 +157,26 @@
     padding-top: 60px;
 }
 
-.sidebar a {
+.sidebar .sidebar-text {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
-.sidebar a:hover {
+.sidebar .sidebar-text:hover {
     color: #f1f1f1;
+}
+
+.sidebar.retracted {
+    width: 30px; /* Largura da sidebar quando retraída */
+}
+
+.sidebar.retracted .sidebar-text {
+    opacity: 0; /* Faz o texto desaparecer quando a sidebar está retraída */
 }
 
 .content {

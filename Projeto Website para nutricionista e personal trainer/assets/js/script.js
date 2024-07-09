@@ -22,3 +22,4 @@ document.getElementById("carrinho").onclick = function() {
         carrinho.innerHTML = '<img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">';
     }
 }
+
