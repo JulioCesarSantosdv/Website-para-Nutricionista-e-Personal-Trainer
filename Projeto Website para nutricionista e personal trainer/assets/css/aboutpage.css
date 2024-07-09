@@ -1,6 +1,12 @@
   /*ESTILO DA PÁGINA 'SOBRE'*/
 
 
+  /* Declarando variáveis de cor */
+:root {
+    --primary--color: #dccbb5;
+    --secondary--color: #333;
+
+}
 /* Estilo do contêiner principal para usar Flexbox */
 body, html {
     height: 100%;
@@ -17,8 +23,8 @@ body, html {
 
 /* Estilo do rodapé */
 footer.sobre-footer {
-    background-color: #dccbb5; /* Cor de fundo do rodapé */
-    color: #333; /* Cor do texto do rodapé */
+    background-color: var(--primary--color); /* Cor de fundo do rodapé */
+    color: var(--secondary--color); /* Cor do texto do rodapé */
     text-align: center; /* Centraliza o conteúdo do rodapé */
     padding: 0.5rem 0; /* Reduz o padding superior e inferior */
     font-size: 0.875rem; /* Reduz a fonte do texto */

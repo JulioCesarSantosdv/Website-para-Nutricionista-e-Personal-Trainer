@@ -1,10 +1,22 @@
  /*CONTÉM ESTILOS PARA A ESTRUTURA DO LAYOUT, */
  /* COMO CABEÇALHO,RODAPÉ E NAVEGAÇÃO.*/
 
+ 
+   /* Declarando variáveis de cor */
+:root {
+    --header-primary-color: #dccbb5;
+    --header-secondary-color: #fff;
+    --navbar-primary-color: #000;
+    --navbar-secondary-color:goldenrod;
+    --footer-color:#333;
+
+}
+
+
 /* Estilo para o cabeçalho */
 header {
-    background-color: #dccbb5;
-    color: #fff;
+    background-color: var(--header-primary-color);
+    color: var(--header-secondary-color);
     padding: 1rem 0;
 }
 
@@ -23,14 +35,14 @@ header {
 
 /* Estilo dos links da navegação */
 .navbar ul li a {
-    color: #000;
+    color:var(--navbar-primary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 /* Efeito de hover nos links da navegação */
 .navbar ul li a:hover {
-    color: goldenrod;
+    color: var(--navbar-secondary-color);
 }
 
 /* Estilo do rodapé */
@@ -39,7 +51,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: #dccbb5;
-    color: #333;
+    color: var(--footer-color);
     text-align: center;
     padding: -10rem -10px;
     font-size: 0.875rem;
