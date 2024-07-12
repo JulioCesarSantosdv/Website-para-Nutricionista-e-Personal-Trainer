@@ -5,76 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
     <!-- Link para o arquivo de estilos CSS -->
-    <!--link rel="stylesheet" href="../assets/css/styles.css"/-->
     <link rel="stylesheet" href="../assets/css/main.css"/>
+    
     <title>Ebooks Fitness & Low Carbs</title>
 </head>
 <body>
     <!-- Indicador de Carregamento -->
     <div id="loadingIndicator" class="loading">
-      <img src="../assets/image/loading.gif" alt="Carregando..." class="loading-image">
-  </div>  
-  <header>
-   <!-- Navegação do site -->
-   <nav class="navbar">
-      <ul>
-           <!-- Links de navegação -->
-           <li><a href="../index.html">Página Principal</a></li>
-           <li><a href="./sobre.html">Sobre</a></li>
-           <li><a href="#">Contato</a></li>
-       </ul>
-   </nav>
-</header>
-<div id="sidebar" class="sidebar">
-   <p class ="sidebar-text" style="color: white">Carrinho</p>
-</div>
-<div id="content" class="content">
-   <section class="products">
-      <h1 class="title">Últimos Ebooks</h1>
+        <img src="../assets/image/loading.gif" alt="Carregando..." class="loading-image">
+    </div>  
+    <header>
+        <!-- Navegação do site -->
+        <nav class="navbar">
+            <ul>
+                <!-- Links de navegação -->
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <p class="sidebar-text" style="color: white">Carrinho</p>
+    </div>
+    <div id="content" class="content">
+        <section class="products">
+            <h1 class="title">Últimos Ebooks</h1>
 
-      <div class="box-container">
-         <!-- Produto 1 -->
-         <div class="box">
-             <div class="cat">Fitness</div>
-             <div class="name">Complete Fitness Guide</div>
-             <div class="price">$9</div>
-             <div class="carrinho">
-                 <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                 <button type="button" name="add_to_cart" style="background: none; border: none;" id="carrinho">
-                     <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
-                 </button>
-             </div>
-         </div>
+            <div class="box-container">
+                <!-- Produto 1 -->
+                <div class="box">
+                    <div class="cat">Fitness</div>
+                    <div class="name">Complete Fitness Guide</div>
+                    <div class="price">$9</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
 
-         <!-- Produto 2 -->
-         <div class="box">
-            <div class="cat">Low Carbs</div>
-            <div class="name">Low Carbs Recipes</div>
-            <div class="price">$7</div>      
-            <div class="carrinho">       
-               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-               <button type="button" name="add_to_cart" style="background: none; border: none;" id="carrinho">
-                  <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
-               </button>
-            </div>  
-         </div>
-      </div>
-   </section>
-</div>
-<!-- Rodapé do site -->
-<footer>
-   <!-- Direitos autorais -->
-   <div class="credit">&copy; Copyright @ 2024 NutriCoach Dietista | All rights reserved!</div>
-   <!-- Links para redes sociais -->
-   <div class="social-links">
-      <a href="#"><img src="../assets/icons/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="../assets/icons/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="../assets/icons/twitter.png" alt="Twitter"></a>
-  </div>
-</footer>
+                <!-- Produto 2 -->
+                <div class="box">
+                    <div class="cat">Low Carbs</div>
+                    <div class="name">Low Carbs Recipes</div>
+                    <div class="price">$7</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="box">
+                    <div class="cat">Fitness</div>
+                    <div class="name">Complete Fitness Guide</div>
+                    <div class="price">$9</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+                <!-- Produto 4 -->
+                <div class="box">
+                    <div class="cat">Fitness</div>
+                    <div class="name">Complete Fitness Guide</div>
+                    <div class="price">$9</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+                <!-- Produto 5 -->
+                <div class="box">
+                    <div class="cat">Fitness</div>
+                    <div class="name">Complete Fitness Guide</div>
+                    <div class="price">$9</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+                <!-- Produto 6 -->
+                <div class="box">
+                    <div class="cat">Fitness</div>
+                    <div class="name">Complete Fitness Guide</div>
+                    <div class="price">$9</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Rodapé do site -->
+    <footer>
+        <!-- Direitos autorais -->
+        <div class="credit">&copy; Copyright @ 2024 NutriCoach Dietista | All rights reserved!</div>
+        <!-- Links para redes sociais -->
+        <div class="social-links">
+            <a href="#"><img src="../assets/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../assets/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../assets/icons/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
 
-<!-- Link para o arquivo JavaScript -->
-<script src="../assets/js/script.js"></script>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
-
