@@ -39,5 +39,22 @@ Para uma branch para o desenvolvimento contínuo que não seja a branch principa
 - Use `bugfix/nome-do-bug` para correções de bugs.
 - Use `hotfix/nome-do-hotfix` para correções urgentes.
 
+  # Fazendo commits pelo Git Bash
+
+### Verifica o status dos arquivos
+git status
+
+### Adiciona todos os arquivos ao staging (área de preparação)
+git add .
+
+# Adiciona um arquivo específico
+git add <strong>"nome-do-arquivo"<strong/>
+
+### Faz o commit com uma mensagem descritiva
+git commit -m <strong>"Mensagem descritiva"<strong/>
+
+### Envia o commit para o repositório remoto 
+git push origin <strong>"nome-da-branch"<strong/>
+
 
 
