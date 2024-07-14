@@ -7,19 +7,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2000); // Adiciona um atraso de 3 segundos
 });
 
-document.getElementById("carrinho").onclick = function() {
-    var sidebar = document.getElementById("sidebar");
-    var carrinho = document.getElementById("carrinho");
-    var content = document.getElementById("content");
-    
-    if (sidebar.style.width === "250px") {
-        sidebar.style.width = "0";
-        content.style.marginLeft = "0";
-        carrinho.innerHTML = '<img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">';
-    } else {
-        sidebar.style.width = "250px";
-        content.style.marginLeft = "250px";
-        carrinho.innerHTML = '<img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">';
-    }
-}
+// Função para lidar com a abertura e fechamento da sidebar
+document.querySelectorAll('.carrinho-button').forEach(button => {
+    button.addEventListener('click', function() {
+        var sidebar = document.getElementById("sidebar");
+        var content = document.getElementById("content");
+        var boxContainer = document.querySelector('.box-container');
 
+        if (sidebar.classList.contains('show')) {
+            sidebar.classList.remove('show');
+            content.style.marginRight = "0";
+            boxContainer.style.transform = "translateX(0)";
+        } else {
+            sidebar.classList.add('show');
+            content.style.marginRight = "250px";
+            boxContainer.style.transform = "translateX(-250px)";
+        }
+    });
+});
