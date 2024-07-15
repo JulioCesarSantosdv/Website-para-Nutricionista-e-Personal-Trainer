@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         var loadingIndicator = document.getElementById('loadingIndicator');
         loadingIndicator.style.display = 'none';
-    }, 2000); // Adiciona um atraso de 3 segundos
+    }, 2000); // Adiciona um atraso de 2 segundos
 });
 
 // Função para lidar com a abertura e fechamento da sidebar
@@ -20,8 +20,10 @@ document.querySelectorAll('.carrinho-button').forEach(button => {
             boxContainer.style.transform = "translateX(0)";
         } else {
             sidebar.classList.add('show');
-            content.style.marginRight = "250px";
-            boxContainer.style.transform = "translateX(-250px)";
+            content.style.marginRight = "120px";// Controla até onde chega o sidebar
+            boxContainer.style.transform = "translateX(-120px)";//Controla até onde chega o sidebar
         }
     });
 });
+
+

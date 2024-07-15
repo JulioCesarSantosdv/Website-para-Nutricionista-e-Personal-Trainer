@@ -18,3 +18,53 @@
         max-width: 400px;
     }
 }
+
+/* Ajustes adicionais para responsividade página "Sobre" */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .main-content .text, .main-content .image {
+        flex: 1 0 auto;
+    }
+}
+
+/* Ajustes adicionais para responsividade página 'Ebooks' */
+@media (max-width: 1024px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
+        padding-right: 0; /* Remover o padding à direita em telas pequenas */
+    }
+}

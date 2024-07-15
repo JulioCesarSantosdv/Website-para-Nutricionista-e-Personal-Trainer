@@ -25,44 +25,62 @@
             </ul>
         </nav>
     </header>
+    <!-- Barra Lateral do Carrinho de Compras -->
     <div id="sidebar" class="sidebar">
         <p class="sidebar-text" style="color: white">Carrinho</p>
     </div>
+    <h1 class="title">Últimos Ebooks</h1>
     <div id="content" class="content">
-        <section class="products">
-            <h1 class="title">Últimos Ebooks</h1>
-
-            <div class="box-container">
-                <!-- Produto 1 -->
-                <div class="box">
-                    <div class="cat">Fitness</div>
-                    <div class="name">Complete Fitness Guide</div>
-                    <div class="price">$9</div>
-                    <div class="carrinho">
-                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
-                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
-                        </button>
-                    </div>
+    <section class="products">
+        <div class="box-container">
+            <!-- Produto 1 -->
+             <div class="box">
+                <div class="ebook-image">
+                    <img src="../assets/image/ebook1.PNG" alt="Capa do Ebook" />
                 </div>
-
-                <!-- Produto 2 -->
-                <div class="box">
-                    <div class="cat">Low Carbs</div>
-                    <div class="name">Low Carbs Recipes</div>
-                    <div class="price">$7</div>
-                    <div class="carrinho">
-                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
-                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
-                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
-                        </button>
-                    </div>
+                <div class="cat">Low Car</div>
+                <div class="name">Dieta Low Carb</div>
+                <div class="price">$9</div>
+                <!--Ícone Carrinho de Compras-->
+                <div class="carrinho-top">
+                    <button type="button" name="add_to_cart" class="carrinho-button">
+                        <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho">
+                    </button>
                 </div>
-                <!-- Produto 3 -->
+                <!--Botões Adicionar e Retirar-->
+                <div class="carrinho">
+                    <button type="button" class="action-button add-button">ADICIONAR</button>
+                    <button type="button" class="action-button remove-button">RETIRAR</button>
+                      <!--Caixa de Quantidade de Itens-->
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                    <!--<button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                        <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                    </button>-->
+                </div>
+            </div>
+            <!-- Produto 2 -->
+             <div class="box">
+                <div class="ebook-image">
+                    <img src="../assets/image/ebook2.PNG" alt="Capa do Ebook" />
+                </div>
+                <div class="cat">Fitness</div>
+                <div class="name">Saúde & Fitness Vegan</div>
+                <div class="price">$7</div>
+                <div class="carrinho">
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                    <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                        <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                    </button>
+                </div>
+            </div>
+            <!-- Produto 3 -->
                 <div class="box">
-                    <div class="cat">Fitness</div>
-                    <div class="name">Complete Fitness Guide</div>
-                    <div class="price">$9</div>
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook3.PNG" alt="Capa do Ebook" />
+                    </div>
+                    <div class="cat">Low Carb</div>
+                    <div class="name">Marmita Fit</div>
+                    <div class="price">$12</div>
                     <div class="carrinho">
                         <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                         <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
@@ -72,9 +90,12 @@
                 </div>
                 <!-- Produto 4 -->
                 <div class="box">
-                    <div class="cat">Fitness</div>
-                    <div class="name">Complete Fitness Guide</div>
-                    <div class="price">$9</div>
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook4.PNG" alt="Capa do Ebook" />
+                    </div>
+                    <div class="cat">Low Carb</div>
+                    <div class="name">50 Melhores Receitas</div>
+                    <div class="price">$10</div>
                     <div class="carrinho">
                         <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                         <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
@@ -84,9 +105,12 @@
                 </div>
                 <!-- Produto 5 -->
                 <div class="box">
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook5.PNG" alt="Capa do Ebook" />
+                    </div>
                     <div class="cat">Fitness</div>
-                    <div class="name">Complete Fitness Guide</div>
-                    <div class="price">$9</div>
+                    <div class="name">Receitas Para Aumentar Massa Muscular</div>
+                    <div class="price">$15</div>
                     <div class="carrinho">
                         <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                         <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
@@ -96,9 +120,12 @@
                 </div>
                 <!-- Produto 6 -->
                 <div class="box">
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook6.PNG" alt="Capa do Ebook" />
+                    </div>
                     <div class="cat">Fitness</div>
-                    <div class="name">Complete Fitness Guide</div>
-                    <div class="price">$9</div>
+                    <div class="name">Vegan Fitness</div>
+                    <div class="price">$7</div>
                     <div class="carrinho">
                         <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                         <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
@@ -106,6 +133,51 @@
                         </button>
                     </div>
                 </div>
+                <!-- Produto 7 -->
+                 <div class="box">
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook7.PNG" alt="Capa do Ebook" />
+                    </div>
+                    <div class="cat">Fitness</div>
+                    <div class="name">Quick Wokouts</div>
+                    <div class="price">$20</div>
+                    <div class="carrinho">
+                        <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                            <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                        </button>
+                    </div>
+                </div>
+                    <!-- Produto 8 -->
+                     <div class="box">
+                        <div class="ebook-image">
+                            <img src="../assets/image/ebook8.PNG" alt="Capa do Ebook" />
+                        </div>
+                        <div class="cat">Fitness</div>
+                        <div class="name">The Secret</div>
+                        <div class="price">$16</div>
+                        <div class="carrinho">
+                            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                            <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                                <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Produto 9 -->
+                    <div class="box">
+                    <div class="ebook-image">
+                        <img src="../assets/image/ebook9.PNG" alt="Capa do Ebook" />
+                    </div>
+                    <div class="cat">Fitness</div>
+                    <div class="name">Guia Yoga Fitness</div>
+                    <div class="price">$10</div>
+                        <div class="carrinho">
+                            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                            <button type="button" name="add_to_cart" style="background: none; border: none;" class="carrinho-button">
+                                <img src="../assets/icons/fas fa-shopping-cart.PNG" alt="Adicionar ao Carrinho" style="width: 24px; height: 24px;">
+                            </button>
+                        </div>
+                    </div>
             </div>
         </section>
     </div>
